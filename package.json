@@ -1,0 +1,34 @@
+{
+  "name": "38-1st-wekea-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weKEA.js",
+  "scripts": {
+    "start": "nodemon weKEA.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wecode-bootcamp-korea/38-1st-weKEA-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wecode-bootcamp-korea/38-1st-weKEA-backend/issues"
+  },
+  "homepage": "https://github.com/wecode-bootcamp-korea/38-1st-weKEA-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dbmate": "^1.0.3",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "mysql2": "^2.3.3",
+    "typeorm": "^0.3.10"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0"
+  }
+}

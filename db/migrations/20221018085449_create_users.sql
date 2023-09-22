@@ -1,0 +1,17 @@
+-- migrate:up
+CREATE TABLE users(
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  last_name VARCHAR(20) NOT NULL,
+  first_name VARCHAR(50) NOT NULL,
+  birthday DATE NOT NULL,
+  phone_number VARCHAR(30) NOT NULL,
+  email VARCHAR(100) NOT NULL UNIQUE,
+  point DECIMAL(15, 3),
+  password VARCHAR(200) NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP NULL ON UPDATE CURRENT_TIMESTAMP
+);
+
+-- migrate:down
+DROP TABLE users;
+
